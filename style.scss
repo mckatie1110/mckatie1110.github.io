@@ -93,6 +93,7 @@ a {
 }
 
 .socialmedia {
+  position:relative;
   max-width:100px;
   max-height: 100px;
   margin:2%;
@@ -120,9 +121,10 @@ $yellow: #F6DA5C;
   font-family: Georgia, helvetica, sans-serif;
   font-size: 8em;
   line-height: 1.6;
-  font-weight: 400;
   font-style: normal;
   color: $yellow; 
+  padding:10%;
+  float:left;
 }
 
 @mixin h2($lightblue){
@@ -214,18 +216,12 @@ h1 {
   margin: 5% auto;
 }
 
-nav {
-  li {
-  display: none;
-  }
-}
 
   
   li {  
     list-style-type: none;
     width: 50%;
     float: left;
-    border:2pt solid white;
 
     p {
       margin-bottom: 5px;
@@ -267,17 +263,10 @@ nav {
   nav {
     li {
     display: inline-block;
-    margin-left: 40px; 
-    border:2pt solid white;
+    margin-left: 10px; 
     }
   }
 
-  h1 {
-    position: absolute;
-   left: 0;
-   right: 0;
-    top: 0;
-  }
 }
 
 .logo{
@@ -290,11 +279,11 @@ body {
 }
 
 nav {
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   
   button {
-    padding: 15px 20px 15px 20px;
+    padding: 5px 10px;
     background-color: $lightblue;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -313,44 +302,37 @@ nav {
   }
   
   a {
-    color: #fff;
+    color: $yellow;
     text-decoration: none;
+    padding:1%;
   }
 
   li {
-    padding: 10px;
+    padding: 2%;
     display: none;
+    float:left;
     
     &:hover {
       border-left: 3px solid #fff;
     }
   }
 
-  .show-nav {
-    display: block;
-  }
 }
 
 
 @media screen and (min-width: 64em) {
   
   nav {
-    
-    button {
-      display: none;
-    }
   
     ul {
       margin-top: 0;
     }
 
     a {
-      margin-right: 20px;
-      padding-bottom: 26px;
-      
-      &:hover {
-        border-bottom: 3px solid #fff;
-      }
+      margin-right: 5px;
+      padding: 5% 0;
+      float:left;
+    
     }
 
     li {

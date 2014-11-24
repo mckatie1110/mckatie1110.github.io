@@ -72,6 +72,7 @@ a {
   margin-top: 20%; }
 
 .socialmedia {
+  position: relative;
   max-width: 100px;
   max-height: 100px;
   margin: 2%;
@@ -93,9 +94,10 @@ h1 {
   font-family: Georgia, helvetica, sans-serif;
   font-size: 8em;
   line-height: 1.6;
-  font-weight: 400;
   font-style: normal;
-  color: #F6DA5C; }
+  color: #F6DA5C;
+  padding: 10%;
+  float: left; }
 
 h2 {
   font-family: Georgia, helvetica, sans-serif;
@@ -151,14 +153,10 @@ h1 {
   display: block;
   margin: 5% auto; }
 
-nav li {
-  display: none; }
-
 li {
   list-style-type: none;
   width: 50%;
-  float: left;
-  border: 2pt solid white; }
+  float: left; }
   li p {
     margin-bottom: 5px; }
 
@@ -183,14 +181,7 @@ p {
 @media screen and (min-width: 64em) {
   nav li {
     display: inline-block;
-    margin-left: 40px;
-    border: 2pt solid white; }
-
-  h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0; } }
+    margin-left: 10px; } }
 .logo {
   width: 100px;
   height: 100px; }
@@ -199,10 +190,10 @@ body {
   font-family: helvetica; }
 
 nav {
-  padding: 20px;
+  padding: 10px;
   background-color: white; }
   nav button {
-    padding: 15px 20px 15px 20px;
+    padding: 5px 10px;
     background-color: #0290A1;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -215,26 +206,23 @@ nav {
   nav ul {
     margin-top: 20px; }
   nav a {
-    color: #fff;
-    text-decoration: none; }
+    color: #F6DA5C;
+    text-decoration: none;
+    padding: 1%; }
   nav li {
-    padding: 10px;
-    display: none; }
+    padding: 2%;
+    display: none;
+    float: left; }
     nav li:hover {
       border-left: 3px solid #fff; }
-  nav .show-nav {
-    display: block; }
 
 @media screen and (min-width: 64em) {
-  nav button {
-    display: none; }
   nav ul {
     margin-top: 0; }
   nav a {
-    margin-right: 20px;
-    padding-bottom: 26px; }
-    nav a:hover {
-      border-bottom: 3px solid #fff; }
+    margin-right: 5px;
+    padding: 5% 0;
+    float: left; }
   nav li {
     display: inline-block; }
     nav li:hover {
