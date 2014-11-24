@@ -17,47 +17,49 @@ body {
 }
 
 .global{
-  background-color:white;
+  background-color:$grey;
   width:100%;
   max-width:320px;
-  height:1700px;
   margin:1%;
   padding:2%;
 }
 
 .banner {
-  padding:2%;
+  border:2pt solid white;
+  background-color:white;
+  padding:1%;
 }
 
 img {
   float:left;
-  margin:2% 0;
+  margin:5% 20%;
+  border:10pt solid white;
+  border-radius:10%;
 }
 
 button {
-  padding: 15px 20px 15px 20px;
+  padding: 1%;
   background-color: $darkblue;
   border: 2pt solid $lightblue;
-  border-radius: 50%;
+  border-radius: 10%;
   outline: none;
   color: #FFF;
-  font-size: 1em;
+  font-size:0.5em;
 }
 
 button:hover {
   cursor: pointer;
   background-color: $lightblue;
-  border: 2pt solid $darkblue;
 }
 
 li {
-  background-color:$darkblue;
-  padding:4%;
+  padding:2%;
   float:left;
   list-style:none;
   text-align:center;
   font-size:.94em;
-  margin:12% 3.5%;
+  margin:12% 3%;
+  border:2pt solid white;
 }
 
 a {
@@ -71,11 +73,11 @@ a {
 
 .projectlinks {
   background-color:$darkblue;
-  padding:2% 10%;
+  padding:5%;
   list-style:none;
   text-align:center;
-  font-size:1.2em;
-  margin-left:6%;
+  font-size:2.5em;
+  margin: 0, auto;
 }
 
 .latestproject {
@@ -91,19 +93,12 @@ a {
 }
 
 .socialmedia {
-  margin-top:15%;
+  max-width:100px;
+  max-height: 100px;
+  margin:2%;
   float:right;
 }
 
-
-h4 {
-  font-family:georgia;
-  font-size:2em;
-  margin-top:20%;
-  margin-left:10%;
-  float:left;
-  color:black;
-}
 
 $width: 320px;
 $grey: #9DA4BE;
@@ -114,7 +109,6 @@ $yellow: #F6DA5C;
 
 @mixin div($grey){
   background-color: $grey;
-  width: $width;
   padding-top:40px;
   padding-bottom:40px;
   padding-left:40px;
@@ -137,11 +131,11 @@ $yellow: #F6DA5C;
   line-height: 1.6;
   font-weight: 400;
   font-style: normal;
-  color: $grey; 
+  color: $lightblue; 
   margin-bottom: 15px;
 }
 
-@mixin p($grey){
+@mixin p($darkblue){
   font-family: Georgia, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.6;
@@ -202,7 +196,8 @@ h1 {
 }
 
 .banner{
-  @include button-style ($darkblue);
+  @include button-style ($grey);
+  border-radius:10%;
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 10px;
@@ -216,45 +211,25 @@ h1 {
 .logo {
   clear: right;
   display: block;
-  margin: 0 auto;
+  margin: 5% auto;
 }
+
 nav {
   li {
   display: none;
   }
 }
 
-.projectlinks {
-padding: 0;
-margin: 0 auto;
-padding-bottom: 10px;
-  
-  img {
-  width: 100%;
-  }
-}
-
-
-.currently {
-  @include div ($grey);
-  overflow: hidden;
   
   li {  
     list-style-type: none;
     width: 50%;
     float: left;
+    border:2pt solid white;
 
     p {
       margin-bottom: 5px;
     }
-  }
-}
-
-footer {
-  clear: both;
-  overflow: hidden;
-  @include div ($grey);
-
   }
   
   img {
@@ -269,7 +244,7 @@ footer {
 
 
 @media screen and (min-width: 36em) {
-  .aboutme, .bottom {
+  .aboutme {
     width: 50%;
     float: left;
   }
@@ -284,14 +259,6 @@ footer {
     clear: both;
   }
 
-  .projectlinks {
-    width: 49%;
-    float: left;
-  }
-
-  .projectlinks:nth-of-type(2n) {
-    margin-left: 2%
-  }
 }
 
 
@@ -301,6 +268,7 @@ footer {
     li {
     display: inline-block;
     margin-left: 40px; 
+    border:2pt solid white;
     }
   }
 
@@ -312,3 +280,94 @@ footer {
   }
 }
 
+.logo{
+  width:100px;
+  height:100px;
+}
+
+body {
+  font-family: helvetica;
+}
+
+nav {
+  padding: 20px;
+  background-color: white;
+  
+  button {
+    padding: 15px 20px 15px 20px;
+    background-color: $lightblue;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    color: #FFF;
+    font-size: 1em;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: #darkblue;
+    }
+  }
+
+  ul {
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  li {
+    padding: 10px;
+    display: none;
+    
+    &:hover {
+      border-left: 3px solid #fff;
+    }
+  }
+
+  .show-nav {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 64em) {
+  
+  nav {
+    
+    button {
+      display: none;
+    }
+  
+    ul {
+      margin-top: 0;
+    }
+
+    a {
+      margin-right: 20px;
+      padding-bottom: 26px;
+      
+      &:hover {
+        border-bottom: 3px solid #fff;
+      }
+    }
+
+    li {
+      display: inline-block;
+      
+      &:hover {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+.break{
+  margin:0 auto;
+  padding:0;
+  width:100%;
+  max-height:150px;
+  border:0 solid $grey;
+  border-radius:none;
+}
