@@ -1,0 +1,314 @@
+@import url("reset.css");
+
+$grey: #9DA4BE;
+$darkblue: #2144E7;
+$lightblue: #0A9A94;
+$yellow: #F6DA5C;
+
+section {
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+body {
+  font-family:georgia;
+  font-size:1em;
+  margin:2%;
+}
+
+.global{
+  background-color:white;
+  width:100%;
+  max-width:320px;
+  height:1700px;
+  margin:1%;
+  padding:2%;
+}
+
+.banner {
+  padding:2%;
+}
+
+img {
+  float:left;
+  margin:2% 0;
+}
+
+button {
+  padding: 15px 20px 15px 20px;
+  background-color: $darkblue;
+  border: 2pt solid $lightblue;
+  border-radius: 50%;
+  outline: none;
+  color: #FFF;
+  font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: $lightblue;
+  border: 2pt solid $darkblue;
+}
+
+li {
+  background-color:$darkblue;
+  padding:4%;
+  float:left;
+  list-style:none;
+  text-align:center;
+  font-size:.94em;
+  margin:12% 3.5%;
+}
+
+a {
+  text-decoration:none;
+  color:$lightblue;
+}
+
+.aboutme img{
+  max-width: 200px;
+}
+
+.projectlinks {
+  background-color:$darkblue;
+  padding:2% 10%;
+  list-style:none;
+  text-align:center;
+  font-size:1.2em;
+  margin-left:6%;
+}
+
+.latestproject {
+	padding:20%;
+  margin-top:20%;
+
+}
+
+.pastproject {
+	padding:10%;
+  margin-top:20%;
+
+}
+
+.socialmedia {
+  margin-top:15%;
+  float:right;
+}
+
+
+h4 {
+  font-family:georgia;
+  font-size:2em;
+  margin-top:20%;
+  margin-left:10%;
+  float:left;
+  color:black;
+}
+
+$width: 320px;
+$grey: #9DA4BE;
+$darkblue: #2144E7;
+$lightblue: #0290A1;
+$yellow: #F6DA5C;
+
+
+@mixin div($grey){
+  background-color: $grey;
+  width: $width;
+  padding-top:40px;
+  padding-bottom:40px;
+  padding-left:40px;
+  padding-right:40px;
+  border: 1px solid #000;
+  }
+
+@mixin h1 ($darkblue){
+  font-family: Georgia, helvetica, sans-serif;
+  font-size: 8em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+  color: $yellow; 
+}
+
+@mixin h2($lightblue){
+  font-family: Georgia, helvetica, sans-serif;
+  font-size: 5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+  color: $grey; 
+  margin-bottom: 15px;
+}
+
+@mixin p($grey){
+  font-family: Georgia, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-style: normal;
+  color: $darkblue;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+@mixin button-style($grey) {
+  font-family: Georgia, helvetica, sans-serif;
+  font-size: 4em;
+  color: $grey;
+  line-height: 1;
+  border-radius: 3px;
+  border: 2px solid $grey;
+  padding: 20px; 
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+
+div, header, nav, section, article, aside, footer, figure, hr, button {
+  position: relative;
+}
+
+.global{
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+h1 {
+  @include h1($darkblue);
+}
+h2 {
+  @include h2($lightblue);
+}
+p {
+  @include p($darkblue);
+}
+
+
+header {
+@include div($grey);
+padding-bottom: 0;
+overflow: hidden;
+min-height: 400px;
+}
+
+h1 {
+  margin-top:250px;
+}
+
+.banner{
+  @include button-style ($darkblue);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  float: right;
+  
+  span {
+  font-size: 30px;
+  }
+}
+
+.logo {
+  clear: right;
+  display: block;
+  margin: 0 auto;
+}
+nav {
+  li {
+  display: none;
+  }
+}
+
+.projectlinks {
+padding: 0;
+margin: 0 auto;
+padding-bottom: 10px;
+  
+  img {
+  width: 100%;
+  }
+}
+
+
+.currently {
+  @include div ($grey);
+  overflow: hidden;
+  
+  li {  
+    list-style-type: none;
+    width: 50%;
+    float: left;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+footer {
+  clear: both;
+  overflow: hidden;
+  @include div ($grey);
+
+  }
+  
+  img {
+    margin-right: 20px;
+  }
+
+
+  p{ 
+    color: $darkblue;
+    padding: 30px;
+  }
+
+
+@media screen and (min-width: 36em) {
+  .aboutme, .bottom {
+    width: 50%;
+    float: left;
+  }
+  
+  .logo {;
+  display: block;
+  position: absolute;
+  }
+  
+  
+  h1 {
+    clear: both;
+  }
+
+  .projectlinks {
+    width: 49%;
+    float: left;
+  }
+
+  .projectlinks:nth-of-type(2n) {
+    margin-left: 2%
+  }
+}
+
+
+@media screen and (min-width: 64em) {
+
+  nav {
+    li {
+    display: inline-block;
+    margin-left: 40px; 
+    }
+  }
+
+  h1 {
+    position: absolute;
+   left: 0;
+   right: 0;
+    top: 0;
+  }
+}
+
