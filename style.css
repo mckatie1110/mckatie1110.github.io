@@ -1,4 +1,9 @@
 @import url("reset.css");
+
+html{
+  background-color: #9DA4BE;
+}
+
 section {
   margin-top: 2%;
   margin-bottom: 2%; }
@@ -140,10 +145,21 @@ h1 {
   display: block;
   margin: 5% auto; }
 
+  nav button {
+  padding: 5%;
+  background-color: #0290A1;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  color: #FFF;
+  font-size: 1em;
+  margin: 0, auto; }
+
 li {
   list-style-type: none;
   width: 50%;
-  float: left; }
+  float: left;
+  display:none; }
 
 img {
   margin-right: 20px; }
@@ -156,21 +172,42 @@ p {
   .aboutme p {
     width: 50%;
     margin: 1% auto;
-    line-height: 2%; }
+  }
 
-  .logo {
-    display: block;
-    position: absolute; }
+    nav button {
+    padding: 5%;
+    background-color: #0290A1;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    color: #FFF;
+    font-size: 1em;
+    margin: 0, auto; }
 
-  h1 {
-    clear: both; } }
+      nav li {
+    padding: 2%;
+    display: none;
+    float: left; }
+
+  }
+
+
 @media screen and (min-width: 64em) {
-  nav li {
-    display: inline-block;
-    margin-left: 10px; } }
-.logo {
-  width: 100px;
-  height: 100px; }
+
+.logo{
+  margin: 5% auto; }
+
+.banner {
+  font-family: Georgia, helvetica, sans-serif;
+  font-size: 4em;
+  color: #9DA4BE;
+  line-height: 1;
+  border-radius: 3px;
+  border-radius: 10%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  float: right; }
 
 body {
   font-family: helvetica; }
@@ -179,7 +216,7 @@ nav {
   padding: 10px;
   background-color: white; }
   nav button {
-    padding: 5px 10px;
+    padding: 10%;
     background-color: #0290A1;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -187,9 +224,6 @@ nav {
     color: #FFF;
     font-size: 1em;
     margin: 0, auto; }
-    nav button:hover {
-      cursor: pointer;
-      background-color: #grey; }
   nav ul {
     margin-top: 20px; }
   nav a {
@@ -197,18 +231,31 @@ nav {
     text-decoration: none; }
   nav li {
     padding: 2%;
-    display: none;
     float: left; }
     nav li:hover {
       border-left: 3px solid #fff; }
 
-@media screen and (min-width: 64em) {
-  nav ul {
-    margin-top: 0; }
   nav li {
-    display: inline-block; }
+    float:left;
+    padding:2%; 
+    
+  }
+
     nav li:hover {
-      border-left: 0; } }
+      float:left;
+      border-left: 0; } 
+  
+  .projectlinks {
+    background-color: #2144E7;
+    padding: 10%;
+    list-style: none;
+    text-align: center;
+    font-size: 10em;
+    margin: 15%, auto; }
+
+    }
+
+
 .break {
   margin: 0 auto;
   padding: 0;
@@ -217,7 +264,5 @@ nav {
   border: 0 solid #9DA4BE;
   border-radius: none; }
 
-html {
-  background-color: #9DA4BE; }
 
 /*# sourceMappingURL=style.css.map */
