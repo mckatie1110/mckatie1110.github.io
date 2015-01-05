@@ -1,7 +1,7 @@
 @import url("reset.css");
-section {
-  margin-top: 2%;
-  margin-bottom: 2%; }
+
+html { 
+  background-color: #9DA4BE;}
 
 body {
   font-family: "museo",serif;
