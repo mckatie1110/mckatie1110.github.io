@@ -1,7 +1,55 @@
 h1{
+	margin-left:10%;
+	margin-right:5%;
+	padding-bottom:5%;
 	color:black;
 	font-size:1.5em;
 	font-family:helvetica;
+}
+
+h2{
+	margin-left:5%;
+	margin-right:5%;
+	padding-bottom:5%;
+	color:black;
+	font-size:1.25em;
+	font-family:helvetica;
+
+	a{
+		color:black;
+	}
+
+}
+
+h3{
+	margin-left:5%;
+	margin-right:5%;
+	padding-bottom:5%;
+	color:black;
+	font-size:0.9em;
+	font-family:helvetica;
+
+	a{
+		color:green;
+	}
+
+}
+
+p{
+	margin-left:5%;
+	margin-right:5%;
+	padding-bottom:5%;
+	font-size:1em;
+	font-family:helvetica;
+}
+
+a{
+	color:green;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
 }
 
 .background{
@@ -10,13 +58,16 @@ h1{
 }
 
 .logo{
-	width:40%;
+	width:30%;
 	margin-top:10%;
-	margin-left:25%;
+	margin-left:33%;
+	margin-right:30%;
 	margin-bottom:5%;
-	border: solid white 10px;
-	border-radius:50%;
+	border: solid white 8px;
+	border-radius:60%;
+
 }
+
 
 .banner a button{
 	color:white;
@@ -24,12 +75,12 @@ h1{
 
 button{
 	float:left;
-	margin-left:3px;
+	margin-left:1.25%;
 	margin-bottom:5%;
 	padding-top:3%;
 	padding-bottom:3%;
-	padding-left:5.9%;
-	padding-right:5.9%;
+	padding-left:4%;
+	padding-right:4%;
 	background-color:green;
 	border: none;
 	font-size:1em;
@@ -56,25 +107,56 @@ button:hover{
 	padding-bottom:3%;
 	padding-left:20%;
 	padding-right:20%;
+	border-radius:50%;
 }
 
-.projects li{
+.projectbuttons li{
 	list-style: none;
 }
 
-.projects button{
-	margin-left:3px;
-	padding-top:5%;
-	padding-bottom:5%;
-	padding-left:12.5%;
-	padding-right:12.5%;
+.projectbuttons{
+	margin-left:12%;
+	margin-right:5%;
+	margin-bottom:10%;
+	padding-top:10%;
+	padding-bottom:10%;
 }
 
-.projects a button{
+.projectbuttons a button{
 	color:white;
 }
 
-.projects a button:hover{
+.projectbuttons a button:hover{
 	color:black;
 }
 
+
+.latestproject{
+	background-color:#EEE4C0;
+	
+}
+
+.pastproject{
+	background-color:#EEE4C0;
+
+}
+
+.dentist1, .style1{
+	width:90%;
+	margin:5%;
+}
+
+.socialmedia img{
+	width:15%;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.facebook{
+	margin-left:26%;
+}
+
+.connect{
+	background-color:#EEE4C0;
+	padding-top:5%;
+}
