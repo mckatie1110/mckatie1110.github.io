@@ -1,8 +1,7 @@
 h1 {
-  color: brown; }
-
-div {
-  border: solid yellow 3px; }
+  color: black;
+  font-size: 1.5em;
+  font-family: helvetica; }
 
 .background {
   position: fixed;
@@ -12,26 +11,57 @@ div {
   width: 40%;
   margin-top: 10%;
   margin-left: 25%;
+  margin-bottom: 5%;
   border: solid white 10px;
   border-radius: 50%; }
 
-.banner a {
-  color: white;
-  text-decoration: none; }
+.banner a button {
+  color: white; }
 
 button {
   float: left;
-  margin: 2.9%;
-  padding: 2.5%;
+  margin-left: 3px;
+  margin-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5.9%;
+  padding-right: 5.9%;
   background-color: green;
-  border: solid green 2px;
-  border-radius: 20%;
+  border: none;
   font-size: 1em;
-  font-family: helvetica-light; }
+  font-family: helvetica; }
+
+.banner a button:hover {
+  color: black; }
+
+button:hover {
+  background-color: #EEE4C0; }
+
+.aboutme {
+  background-color: #EEE4C0; }
+  .aboutme p {
+    padding-left: 5%; }
 
 .me {
   width: 60%;
+  padding-bottom: 3%;
   padding-left: 20%;
   padding-right: 20%; }
+
+.projects li {
+  list-style: none; }
+
+.projects button {
+  margin-left: 3px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 12.5%;
+  padding-right: 12.5%; }
+
+.projects a button {
+  color: white; }
+
+.projects a button:hover {
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */
