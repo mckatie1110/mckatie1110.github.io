@@ -1,7 +1,7 @@
 h1 {
   margin-left: 10%;
   margin-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 15px;
   color: black;
   font-size: 1.5em;
   font-family: helvetica; }
@@ -9,7 +9,7 @@ h1 {
 h2 {
   margin-left: 5%;
   margin-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 15px;
   color: black;
   font-size: 1.25em;
   font-family: helvetica; }
@@ -19,7 +19,7 @@ h2 {
 h3 {
   margin-left: 5%;
   margin-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 20px;
   color: black;
   font-size: 0.9em;
   font-family: helvetica; }
@@ -29,9 +29,10 @@ h3 {
 p {
   margin-left: 5%;
   margin-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 10px;
   font-size: 1em;
-  font-family: helvetica; }
+  font-family: helvetica;
+  line-height: 22px; }
 
 a {
   color: green;
@@ -46,10 +47,10 @@ a:hover {
 
 .logo {
   width: 30%;
-  margin-top: 10%;
+  margin-top: 15px;
   margin-left: 33%;
   margin-right: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 15px;
   border: solid white 8px;
   border-radius: 60%; }
 
@@ -58,16 +59,19 @@ a:hover {
 
 button {
   float: left;
-  margin-left: 1.25%;
-  margin-bottom: 5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 4%;
-  padding-right: 4%;
+  margin-left: 2.5%;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   background-color: green;
   border: none;
-  font-size: 1em;
+  font-size: 0.75em;
   font-family: helvetica; }
+
+.homebut {
+  margin-left: 7.5%; }
 
 .banner a button:hover {
   color: black; }
@@ -82,7 +86,7 @@ button:hover {
 
 .me {
   width: 60%;
-  padding-bottom: 3%;
+  padding-bottom: 10px;
   padding-left: 20%;
   padding-right: 20%;
   border-radius: 50%; }
@@ -91,11 +95,11 @@ button:hover {
   list-style: none; }
 
 .projectbuttons {
-  margin-left: 12%;
+  margin-left: 20%;
   margin-right: 5%;
-  margin-bottom: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%; }
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .projectbuttons a button {
   color: white; }
@@ -110,8 +114,10 @@ button:hover {
   background-color: #EEE4C0; }
 
 .dentist1, .style1 {
-  width: 90%;
-  margin: 5%; }
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  border: solid black 4px; }
 
 .socialmedia img {
   width: 15%;
@@ -123,6 +129,109 @@ button:hover {
 
 .connect {
   background-color: #EEE4C0;
-  padding-top: 5%; }
+  padding-top: 20px; }
+
+@media screen and (min-width: 60em) {
+  h2 {
+    max-width: 800px; }
+
+  .logo {
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border: solid white 8px;
+    border-radius: 60%; }
+
+  button {
+    float: left;
+    margin-left: 2.5%;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: green;
+    border: none;
+    font-size: 1em;
+    font-family: helvetica; }
+
+  .homebut {
+    margin-left: 4%; }
+
+  .me {
+    float: right;
+    margin-top: 50px;
+    margin-right: 16%;
+    padding: 0px;
+    max-width: 20%;
+    border-radius: 50%; }
+
+  .aboutme {
+    padding-bottom: 40px; }
+    .aboutme h1 {
+      margin-top: 100px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      padding: 0px; }
+    .aboutme p {
+      margin: 0px;
+      padding-top: 0px;
+      padding-left: 16%;
+      padding-right: 50%;
+      padding-bottom: 20px;
+      line-height: 24px; }
+
+  .projectbuttons {
+    margin-left: 35%;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+  .latestproject {
+    min-height: 500px;
+    border-top: solid green 4px;
+    border-bottom: solid green 4px; }
+    .latestproject h2 {
+      position: relative;
+      padding: 0;
+      left: 40px;
+      top: 40px; }
+    .latestproject p {
+      margin-top: 60px;
+      margin-left: 105px; }
+
+  .pastproject {
+    min-height: 600px;
+    border-top: solid green 4px;
+    border-bottom: solid green 4px; }
+    .pastproject h2 {
+      position: relative;
+      padding: 0;
+      left: 40px;
+      top: 60px; }
+    .pastproject p {
+      margin-top: 80px;
+      margin-left: 105px; }
+
+  .dentist1, .style1 {
+    float: right;
+    max-width: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
+    border: solid black 4px; }
+
+  .socialmedia img {
+    width: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .facebook {
+    margin-left: 42%; }
+
+  .connect {
+    background-color: #EEE4C0;
+    padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
