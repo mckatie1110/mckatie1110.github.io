@@ -1,6 +1,6 @@
 
 div{
-    max-width:100%;
+    max-width:1440px;
 }
 
 h1 {
@@ -165,6 +165,9 @@ button:hover {
 }
 
 @media screen and (min-width: 60em) {
+    div{
+    max-width:1440px;
+}
 
 	h2{
 		max-width:800px;
