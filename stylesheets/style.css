@@ -202,30 +202,32 @@ button:hover {
     .latestproject h2 {
       position: relative;
       padding: 0;
-      left: 40px;
-      top: 40px; }
+      left: 35px;
+      top: 0px; }
     .latestproject p {
-      margin-top: 60px;
+      margin-top: 10px;
       margin-left: 105px; }
 
   .pastproject {
-    min-height: 600px;
-    border-top: solid green 4px;
+    min-height: 1000px;
+    border-top: solid #EEE4C0 4px;
     border-bottom: solid green 4px; }
-    .pastproject h2 {
-      position: relative;
-      padding: 0;
-      left: 40px;
-      top: 60px; }
     .pastproject p {
-      margin-top: 80px;
-      margin-left: 105px; }
+      margin-top: 30px;
+      margin-left: 120px; }
 
   .dentist1, .style1 {
     float: right;
-    max-width: 50%;
-    margin-top: 50px;
-    margin-right: 50px;
+    max-width: 36%;
+    margin-top: 35px;
+    margin-right: 146px;
+    border: solid black 4px; }
+
+  .style2 {
+    float: left;
+    max-width: 36%;
+    margin-top: 20px;
+    margin-left: 120px;
     border: solid black 4px; }
 
   .socialmedia img {
